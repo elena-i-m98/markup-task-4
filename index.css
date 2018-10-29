@@ -104,4 +104,3 @@ input[id='list_of_cats']:checked ~ article section p.short_info
 {
     display: none;
 }
-
