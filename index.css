@@ -9,17 +9,32 @@ img
     width: 210px;
     height: 150px;
     text-align: center;
+    transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
 }
 
-.cat_block
+img:hover
+{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.cat-block
 {
     margin: 30px;
     width: 210px;
+    height: 330px;
     border: 1px solid rgb(235, 231, 215);
     display: inline-block;
+    overflow: hidden;
+    text-align: center;
 }
 
-.cat_name
+.cat-name
 {
     width: 95%;
     overflow: hidden;
@@ -36,9 +51,14 @@ img
     display: block;
 }
 
-.short_info
+.cat-name:hover
 {
-    margin-left: 5px;
+    text-shadow: 2px 2px 5px #88bdf1;
+}
+
+.short-info
+{
+    margin: 10px;
     font-family: Arial, sans-serif;
     color: rgb(97, 96, 96);
     overflow: hidden;
@@ -47,12 +67,12 @@ img
     white-space: nowrap;
 }
 
-p.big_info
+p.big-info
 {
     display: none;
 }
 
-.cat_block:hover
+.cat-block:hover
 {
     box-shadow: 0 0 30px 8px rgb(201, 204, 245);
 }
@@ -62,7 +82,7 @@ article
     text-align: center;
 }
 
-input[id='list_of_cats']:checked ~ article section
+input[id='list-of-cats']:checked ~ article section
 {
     margin: 5% 25%;
     width: 700px;
@@ -70,14 +90,14 @@ input[id='list_of_cats']:checked ~ article section
     display: block;
 }
 
-input[id='list_of_cats']:checked ~ article section img
+input[id='list-of-cats']:checked ~ article section img
 {
     width: 680px;
     height: 485px;
     text-align: center;
 }
 
-input[id='list_of_cats']:checked ~ article section a
+input[id='list-of-cats']:checked ~ article section a
 {
     margin-left: 5px;
     text-align: center;
@@ -90,7 +110,7 @@ input[id='list_of_cats']:checked ~ article section a
     display: block;
 }
 
-input[id='list_of_cats']:checked ~ article section p.big_info
+input[id='list-of-cats']:checked ~ article section p.big-info
 {
     display: block;
     margin: 5px 20px;
@@ -100,7 +120,26 @@ input[id='list_of_cats']:checked ~ article section p.big_info
     text-align: justify;
 }
 
-input[id='list_of_cats']:checked ~ article section p.short_info
+input[id='list-of-cats']:checked ~ article section p.short-info
 {
     display: none;
+}
+
+#list-of-cats
+{
+    display: none;
+}
+
+.ckeckbox img
+{
+    width: 40px;
+    height: 40px;
+}
+
+input[id='list-of-cats']:checked ~ .ckeckbox img
+{
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
 }
