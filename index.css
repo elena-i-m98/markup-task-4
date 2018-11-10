@@ -15,7 +15,7 @@ img
     -webkit-transition: all 1s ease-out;
 }
 
-img:hover
+img:not([class='list']):hover
 {
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
@@ -142,4 +142,15 @@ input[id='list-of-cats']:checked ~ .ckeckbox img
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
+}
+
+h1
+{
+    font-family: fantasy;
+    font-size: 32px;
+}
+
+h5
+{
+    display: none;
 }
