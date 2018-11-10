@@ -41,6 +41,7 @@ img:not([class='list']):hover
     text-overflow: ellipsis;
     white-space: nowrap;
     margin-left: 5px;
+    margin-top: 20px;
     text-align: center;
     text-decoration: none;
     font-family: Schoen;
@@ -86,6 +87,7 @@ input[id='list-of-cats']:checked ~ article section
 {
     margin: 5% 25%;
     width: 700px;
+    height: 750px;
     border: 1px solid rgb(235, 231, 215);
     display: block;
 }
@@ -150,7 +152,7 @@ h1
     font-size: 32px;
 }
 
-h5
+h2
 {
     display: none;
 }
