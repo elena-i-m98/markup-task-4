@@ -125,7 +125,7 @@ input[id='list-of-cats']:checked ~ article section p.short-info
     display: none;
 }
 
-#list-of-cats
+[id='list-of-cats']
 {
     display: none;
 }
